@@ -1,0 +1,69 @@
+.contener{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.head-img{
+  width: 100%;
+  height: 460rpx;
+}
+.vadiu-img{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  top: 185rpx;
+}
+.auther-img-text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  margin-top: 10px;
+}
+.auther-img{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 10rpx;
+}
+.auther-text{
+  font-size: 32rpx;
+  color: #333;
+}
+.content-title{
+  margin-top: 20px;
+  width: 90%;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.save-share{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 90%;
+  height: 100rpx;
+  margin-top: 10px;
+  position: relative;
+}
+.save-share image{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+}
+.save-share image:nth-of-type(2){
+  right: 120rpx;
+}
+.hr{
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+.content-content{
+  width: 90%;
+  margin-top: 10px;
+}
+.content-content text{
+   font-size: 24rpx;
+   line-height: 36rpx;
+}

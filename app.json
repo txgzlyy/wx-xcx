@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/wellcome/wellcome",
+    "pages/posts/post",
+    "pages/post-news/post-news"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "rgb(175,218,250)",
+    "navigationBarTextStyle":"black"
+  }
+}

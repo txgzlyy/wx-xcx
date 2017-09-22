@@ -1,0 +1,7 @@
+<view class="contener">
+   <image class='imgcss' src='/images/img.jpg'></image>
+   <text class='textuser'>HELL TXGZ</text>
+   <view class='motoBox' bindtap='onTap'>     
+        <text class='moto'>开启小程序之旅</text>
+   </view>
+</view>

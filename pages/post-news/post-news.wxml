@@ -1,0 +1,21 @@
+<view class="contener">
+  <image class='head-img' src='{{isStart?contentData.imgSrc:contentData.music.coverImg}}'></image>
+  <image class='vadiu-img' wx:if="{{isStart}}" catchtap='vadiuTap' src='../../images/music/music-start.png'></image>
+  <image class='vadiu-img' wx:else catchtap='vadiuTap' src='../../images/music/music-stop.png'></image>
+  <view class='auther-img-text'>
+    <image class='auther-img' src='{{contentData.avatar}}'></image>
+    <text class='auther-text'>{{contentData.author}} <text style='font-size:30rpx;'>发表于</text> {{contentData.dateTime}}</text>
+  </view>
+  <view class='content-title'>
+     <text>{{contentData.title}}</text>
+  </view>
+  <view class='save-share'>
+       <view class='hr'></view>
+       <image catchtap='shareTap' src='../../images/icon/share.png'></image>  
+       <image wx:if="{{collected}}" catchtap='storTap' src='../../images/icon/collection.png'></image>
+       <image wx:else catchtap='storTap' src='../../images/icon/collection-anti.png'></image>
+  </view>
+  <view class='content-content'>
+       <text>  {{contentData.detail}} </text>
+  </view>
+</view>

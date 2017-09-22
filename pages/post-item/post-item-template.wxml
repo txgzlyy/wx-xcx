@@ -1,0 +1,21 @@
+<template name="post-item">
+  <view class='post-sigle'>
+    <view class='post-auther-date'>
+      <image class='post-auther' src='{{item.avatar}}'></image>
+      <text class='post-date'>{{item.date}}</text>
+    </view>
+    <view class='post-img-title'>
+      <text class='post-title'>{{item.title}}</text>
+      <image class='post-img' src='{{item.imgSrc}}'></image>
+      <view class='content'>
+        <text class='content-text' space="nbsp">{{item.content}}</text>
+      </view>
+    </view>
+    <view class='post-bottom'>
+      <image class='bottom-img' src='/images/icon/chat.png'></image>
+      <text class='bottom-view'>{{item.reading}}</text>
+      <image class='bottom-img' src='/images/icon/view.png'></image>
+      <text class='bottom-view'>{{item.collection}}</text>
+    </view>
+  </view>
+</template>

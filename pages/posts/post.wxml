@@ -1,0 +1,19 @@
+<import src="/pages/post-item/post-item-template.wxml" />
+<view>
+  <swiper class='swiper' vertical='true' indicator-dots="true" autoplay="true" interval="3000">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='post-content'>
+    <block wx:for="{{dataLists}}">
+      <view bindtap='jumpTap' data-post-id='{{item.postId}}'>
+        <template is="post-item" data="{{item}}" />
+      </view>
+    </block>
+  </view>
+
+</view>
